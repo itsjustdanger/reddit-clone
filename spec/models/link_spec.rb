@@ -1,5 +1,10 @@
 require 'rails_helper'
 
+RSpec.describe Link, "validations" do
+  it { is_expected.to validate_presence_of(:title) }
+  it { is_expected.to validate_presence_of(:url) }
+end
+
 RSpec.describe Link, ".hottest_first" do
   it "returns the links: hottest to coldest" do
     coldest_link = create(:link, upvotes: 3, downvotes: 3)
