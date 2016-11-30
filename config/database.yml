@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: reddit-clone_production
-  username: reddit-clone
-  password: <%= ENV['REDDIT-CLONE_DATABASE_PASSWORD'] %>
+  # username: reddit-clone
+  # password: <%= ENV['REDDIT-CLONE_DATABASE_PASSWORD'] %>
